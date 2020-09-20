@@ -6,7 +6,7 @@ Jashan uses the upvotes and downvotes of users in a party to generate song recom
 
 For each user in the party:
 
-- Get the user's  5 most recently upvoted/added songs (or less if there aren't 5 yet) and feed them into Spotify's recommendation engine to generate 5 new songs. Save danceability, energy, speechiness, acousticness, instrumentalness, and valence of each of these new songs in a dataframe (\`df_final_standardized\`). Each of these 6 features are in the interval [0,1], and for the sake of brevity, they will be referred to as \`d\`, \`e\`, \`s\`, \`a\`, \`i\`, and \`v\` for the rest of this section.
+- Get the user's  5 most recently upvoted/added songs (or less if there aren't 5 yet) and feed them into Spotify's recommendation engine to generate 5 new songs. Save danceability, energy, speechiness, acousticness, instrumentalness, and valence of each of these new songs in a dataframe (\`df_final_standardized\`). Each of these 6 features are in the interval [0,1], and for the sake of brevity, they will be referred to as `d`, \`e\`, \`s\`, \`a\`, \`i\`, and \`v\` for the rest of this section.
  
  - Get the user's  5 most recently downvoted songs (or less if there aren't 5 yet) and feed them into Spotify's recommendation engine to generate 5 new songs. Save \`1-d\`, \`1-e\`, \`1-s\`, \`1-a\`, \`1-i\`, and \`1-v\` of each of these new songs in \`df_final_standardized\`. This way, the inverses of the songs are recorded. ***
  
